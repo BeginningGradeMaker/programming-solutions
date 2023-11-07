@@ -3,7 +3,7 @@ using namespace std;
 
 class MaxBIT {
   public:
-    MaxBIT(int n): n{n+1}, tree{vector<int>(n+1)} {}
+    MaxBIT(int n): n{n+1}, tree{vector<int>(n+1, INT_MIN)} {}
 
     int get(int i) {
       i++;
