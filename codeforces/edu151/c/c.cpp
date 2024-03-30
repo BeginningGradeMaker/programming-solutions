@@ -7,8 +7,15 @@ int N = 200005;
 
 void solve() {
   // Solution goes here
+  string s, l, r;
+  int m;
+  cin >> s >> m >> l >> r;
 }
 
 int main() {
   // Input handling goes here
+  int t; cin >> t;
+  while (t--) {
+    solve();
+  }
 }
