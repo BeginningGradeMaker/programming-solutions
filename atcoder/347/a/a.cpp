@@ -10,13 +10,13 @@ void solve() {
 }
 
 int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
   // Input handling goes here
-  ll a, b, c; cin >> a, b, c;
-  vector<vector<int>> n(2, vector<int>(2, 0));
-
-  for (int i = 0; i < 60; i++) {
-    n[a << i & 1][b << i & 1]++;
+  int n, k; cin >> n >> k;
+  for (int i = 0; i < n; i++) {
+    int x; cin >> x;
+    if (x % k == 0) cout << x / k << ' ';
   }
-
-  
+  cout << endl;
 }

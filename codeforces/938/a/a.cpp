@@ -7,16 +7,16 @@ int N = 200005;
 
 void solve() {
   // Solution goes here
+  int n, a, b; cin >> n >> a >> b;
+  cout << n / 2 * min(b, a * 2) + n % 2 * a << endl;
 }
 
 int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
   // Input handling goes here
-  ll a, b, c; cin >> a, b, c;
-  vector<vector<int>> n(2, vector<int>(2, 0));
-
-  for (int i = 0; i < 60; i++) {
-    n[a << i & 1][b << i & 1]++;
+  int t; cin >> t;
+  while (t--) {
+    solve();
   }
-
-  
 }
