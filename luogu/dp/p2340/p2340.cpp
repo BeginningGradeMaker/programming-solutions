@@ -13,4 +13,7 @@ int main() {
   for (int i = 0; i < n; i++) {
     cin >> arr[i].first >> arr[i].second;
   }
+  for (int i = 0; i < n; i++) {
+    cin >> arr[i].first >> arr[i].second;
+  }
 }

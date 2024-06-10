@@ -5,12 +5,12 @@ ll INF = 0x3f3f3f3f;
 ll mod = 1e9 + 7;
 ll N = 200005;
 
-struct DisjollSet {
+struct DisjoinSet {
   ll n;
   vector<ll> parent;
   vector<ll> size;
 
-  DisjollSet(ll n) : n{n + 1} {
+  DisjoinSet(ll n) : n{n + 1} {
     parent.resize(n + 1);
     size.resize(n + 1);
 
@@ -48,7 +48,7 @@ struct Kruskal {
       return v1[2] < v2[2];
     });
 
-    DisjollSet ds(n);
+    DisjoinSet ds(n);
     ll ans = 0;
     int cnt = 0;
     for (vector<ll> edge : edges) {
