@@ -7,10 +7,19 @@ int N = 200005;
 
 void solve() {
     // Solution goes here
-    int n; cin >> n;
-    vector<int> a(n);
+    int n, k; cin >> n >> k;
+    vector<vector<char>> grid(n, vector<char>(n));
     for (int i = 0; i < n; i++) {
-        cin >> a[i];
+        string s; cin >> s;
+        for (int j = 0; j < n; j++) {
+            grid[i][j] = s[j];
+        }
+    }
+    for (int i = 0; i < n; i += k) {
+        for (int j = 0; j < n; j += k) {
+            cout << grid[i][j]; 
+        }
+        cout << endl;
     }
 }
 
